@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/*Убрал стрелке в input type="number" */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/*--------------------*/
+body {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid black;
+}
+
+div {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.input {
+  margin: 10px;
+  display: block;
+  border: 1px solid black;
+  height: 30px;
+  width: 200px;
+}
+
+.version {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.Mekv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Mekv__text {
+  font-size: 20px;
+}
+
+.Mekv__formula {
+  width: 280px;
+}
+
+.Mekv__formula_left {
+  height: 100px;
+  position: relative;
+}
+
+.Mekv__formula_left .block {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  background-color: black;
+  width: 20px;
+  height: 5px;
+  border-radius: 50px;
+}
+
+.Mekv__formula_left .block1 {
+  position: absolute;
+  top: 40px;
+  left: 43px;
+  background-color: black;
+  width: 5px;
+  height: 40px;
+  border-radius: 50px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.Mekv__formula_left .block2 {
+  position: absolute;
+  top: 11px;
+  left: 61px;
+  background-color: black;
+  width: 5px;
+  height: 70px;
+  border-radius: 50px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.Mekv__formula_left .block3 {
+  position: absolute;
+  top: 12px;
+  left: 74px;
+  background-color: black;
+  width: 70px;
+  height: 5px;
+  border-radius: 50px;
+}
+
+.Mekv__formula_left .block4 {
+  top: 30px;
+  left: 80px;
+  position: absolute;
+}
+
+.Mekv__formula_top {
+  padding: 0 0 5px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Mekv__formula_bottom {
+  padding: 5px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-top: 5px solid black;
+}
+
+.power {
+  font-size: 10px;
+}
+
+.buttonRun {
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonRunBeg {
+  background: #8080ff;
+  border-radius: 20px;
+}
+
+.butt {
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  background: #80ff80;
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition-property: width,background-color;
+  transition-property: width,background-color;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.butt:hover {
+  background-color: #cafd60;
+}
+
+.butt:active {
+  height: 32px;
+}
+
+.rer {
+  margin-left: 10px;
+  font-size: 35px;
+}

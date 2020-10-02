@@ -1,0 +1,120 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
+
+<head>
+	<!-- Заголовок страницы в браузере -->
+	<title>Сайт</title>
+	<!-- Подключаем CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- Кодировка страницы -->
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+<!-- Отображаемое тело страницы -->
+
+<body>
+	<div class="container">
+		<footer>Даные из варианта </footer>
+		<nav>
+			<div class="version">
+				<div class="value">
+					<div class="value__text"><span>t</span>1 =</div><input tabindex="1" type="number" name="t1" id="t1"
+						class="t1 input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>t</span>2 =</div><input tabindex="2" type="number" name="t2" id="t2"
+						class="t2 input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>t</span>3 =</div><input tabindex="3" type="number" name="t3" id="t3"
+						class="t3 input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>t</span>4 =</div><input tabindex="4" type="number" name="t4" id="t4"
+						class="t4 input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>t</span>5 =</div><input tabindex="5" type="number" name="t5" id="t5"
+						class="t5 input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>t</span>6 =</div><input tabindex="6" type="number" name="t6" id="t6"
+						class="t6 input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>t</span>7 =</div><input tabindex="7" type="number" name="t7" id="t7"
+						class="t7 input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>w</span> =</div><input tabindex="8" type="number" name="w" id="w"
+						class="w input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>M</span>co =</div><input tabindex="9" type="number" name="Mco" id="Mco"
+						class="Mco input">
+				</div>
+				<div class="value">
+					<div class="value__text"><span>M</span>cm =</div><input tabindex="10" type="number" name="Mcm" id="Mcm"
+						class="Mcm input">
+				</div>
+			</div>
+			<div class="buttonRun">
+				<div class="buttonRunBeg">
+					<input id="butt" class="butt" type="button" value="Run" />
+				</div>
+				<div class="buttonRunBeg1"><a href class="rer">↺</a></div>
+			</div>
+			<div class="Mekv">
+				<div class="Mekv__text">Мэкв =</div>
+				<div class="Mekv__formula">
+					<div class="Mekv__formula_left formula" id="formula">
+						<div class="block"></div>
+						<div class="block1"></div>
+						<div class="block2"></div>
+						<div class="block3"></div>
+						<div class="block4">
+							<div class="Mekv__formula_top"> Mco<div class="2">
+									<div class="power">2</div>
+								</div> ( t5 + t7 ) + Mch<div class="2">
+									<div class="power">2</div>
+								</div>t6
+							</div>
+							<div class="Mekv__formula_bottom" id="formula_bottom">t1 + t2 + t3 + t4 </div>
+						</div>
+
+					</div>
+				</div>=
+				<div class="Mekv__formula ">
+					<div class="Mekv__formula_left formula" id="formula">
+						<div class="block"></div>
+						<div class="block1"></div>
+						<div class="block2"></div>
+						<div class="block3"></div>
+						<div class="block4">
+							<div class="Mekv__formula_top"> <span id="input_Mco" name="Mco">Mco</span>
+								<div class="2">
+									<div class="power">2</div>
+								</div> ( <span id="input_t5">t5</span> + <span id="input_t7">t7</span> ) + <span
+									id="input_Mcm">Mcm</span>
+								<div class="2">
+									<div class="power">2</div>
+								</div><span id="input_t6">t6</span>
+							</div>
+							<div class="Mekv__formula_bottom" id="formula_bottom"><span id="input_t1">t1</span> + <span
+									id="input_t2">t2</span> + <span id="input_t3">t3</span> + <span id="input_t4">t4</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="Mekv__decision"></div>
+				<div class="Mekv__answer"></div>
+			</div>
+		</nav>
+	</div>
+	<script src="/js/form.js"></script>
+</body>
+
+</html>
