@@ -153,10 +153,6 @@ div {
           align-items: center;
 }
 
-.Mekv__text {
-  font-size: 20px;
-}
-
 .Mekv__formula {
   width: 280px;
 }
@@ -280,4 +276,23 @@ div {
 .rer {
   margin-left: 10px;
   font-size: 35px;
+}
+
+.Pnnp__formula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Pnnp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Pnnp__decision {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
