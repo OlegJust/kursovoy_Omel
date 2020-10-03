@@ -113,7 +113,7 @@ div {
 			font-size: 16px;
 			font-weight: 700;
 			text-align: center;
-			justify-content:center;
+			justify-content: center;
 			display: flex;
 		}
 
@@ -133,7 +133,6 @@ div {
 	}
 }
 
-
 //----------------
 //корень
 .power {
@@ -146,7 +145,7 @@ div {
 .buttonRun {
 	height: 34px;
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 }
 .buttonRunBeg {
 	background: #8080ff;
@@ -159,7 +158,7 @@ div {
 	background: #80ff80;
 	font-size: 16px;
 	font-weight: 700;
-	transition-property: width,background-color;
+	transition-property: width, background-color;
 	transition-duration: 500ms;
 	&:hover {
 		background-color: #cafd60;

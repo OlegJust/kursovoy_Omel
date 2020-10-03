@@ -263,8 +263,8 @@ div {
   background: #80ff80;
   font-size: 16px;
   font-weight: 700;
-  -webkit-transition-property: width,background-color;
-  transition-property: width,background-color;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
 }
