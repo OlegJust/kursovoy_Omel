@@ -45,7 +45,15 @@ div {
 	font-size: 16px;
 	font-weight: 400;
 	&__text {
+		display: flex;	
+		align-items:flex-end;
+		& span {
+			font-size: 23px;
+		}
 	}
+}
+.2 {
+	margin: 0 0 10px 0;
 }
 
 .Mekv {
@@ -173,10 +181,20 @@ div {
 .Pnnp__formula {
 	display: flex;
 }
-.Pnnp{
+.Pnnp {
 	display: flex;
 }
 .Pnnp__decision {
 	margin-left: 10px;
 	display: flex;
+}
+
+.engine_selection {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.engine {
+	text-align: center;
 }

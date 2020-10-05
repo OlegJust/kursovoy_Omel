@@ -144,6 +144,23 @@ div {
   font-weight: 400;
 }
 
+.value__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.value__text span {
+  font-size: 23px;
+}
+
+.2 {
+  margin: 0 0 10px 0;
+}
+
 .Mekv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,4 +312,17 @@ div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.engine_selection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.engine {
+  text-align: center;
 }

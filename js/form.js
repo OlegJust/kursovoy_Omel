@@ -66,13 +66,13 @@ function value(where, what) {
 function funMekv() {
 	const numerator = Math.pow(+Mco.value, 2) * (+t5.value + +t7.value) + Math.pow(+Mcm.value, 2) * +t6.value
 	const denominator = +t1.value + +t2.value + +t3.value + +t4.value
-	// document.querySelector('.Mekv__answer').innerHTML = Math.sqrt(numerator/denominator)
 	Mekv = +(Math.sqrt(numerator / denominator).toFixed(1))
 	document.querySelector('.Mekv__answer').innerHTML = "= " + String(Math.sqrt(numerator / denominator).toFixed(1) + " Нм")
 }
 //-------------------------
 // Находим Рнпр
 function funPnnp() {
+	//document.querySelector('.Pnnp__answer').insertAdjacentHTML('beforeend', '<div id="two">two</div>')
 	document.querySelector('.Pnnp__answer').innerHTML = "= " + String((+Kz.value * Mekv * +w.value * Math.pow(10, -3)).toFixed(1) + " кВт")
 }
 //-------------------------
