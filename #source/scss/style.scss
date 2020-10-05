@@ -45,8 +45,8 @@ div {
 	font-size: 16px;
 	font-weight: 400;
 	&__text {
-		display: flex;	
-		align-items:flex-end;
+		display: flex;
+		align-items: flex-end;
 		& span {
 			font-size: 23px;
 		}
@@ -197,4 +197,8 @@ div {
 
 .engine {
 	text-align: center;
+}
+
+.power {
+	margin: 0 0 10px 0;
 }

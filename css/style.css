@@ -326,3 +326,7 @@ div {
 .engine {
   text-align: center;
 }
+
+.power {
+  margin: 0 0 10px 0;
+}

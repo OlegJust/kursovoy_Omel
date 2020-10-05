@@ -29,6 +29,7 @@ butt.onclick = function () {
 	tras1(ter, ter1, ter2)
 	funMekv()
 	funPnnp()
+
 };
 // ---------------------
 // корень
@@ -76,3 +77,12 @@ function funPnnp() {
 	document.querySelector('.Pnnp__answer').innerHTML = "= " + String((+Kz.value * Mekv * +w.value * Math.pow(10, -3)).toFixed(1) + " кВт")
 }
 //-------------------------
+//
+// function EngineData () {
+// 	document.querySelector('.EngineData').insertAdjacentHTML('beforeend', '<div id="two">two</div>')
+// }
+
+
+//-------------------------
+butt1.onclick = function () {
+};
