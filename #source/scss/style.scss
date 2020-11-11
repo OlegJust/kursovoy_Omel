@@ -37,6 +37,10 @@ div {
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 }
+// @media version and (m-width: 900px) {
+// 	grid-template-columns: 1fr 1fr;
+// 	grid-template-rows: 1fr 1fr 1fr;
+// }
 .value {
 	display: flex;
 	justify-content: flex-end;
@@ -54,6 +58,10 @@ div {
 }
 .2 {
 	margin: 0 0 10px 0;
+}
+.n {
+	margin-top: 10px;
+	display: flex;
 }
 
 .Mekv {
@@ -148,6 +156,7 @@ div {
 //----------------
 //кнопка
 .buttonRun {
+	margin-top: 10px;
 	height: 34px;
 	display: flex;
 	justify-content: center;
@@ -196,9 +205,58 @@ div {
 }
 
 .engine {
+	margin-top: 10px;
 	text-align: center;
+}
+.engine1 {
+	margin-top: 10px;
+	text-align: center;
+	color: red;
 }
 
 .power {
 	margin: 0 0 10px 0;
+}
+
+.Jg {
+	&__formula {
+		padding: 0 10px 0;
+		display: inline - block;
+	}
+	&__decision {
+		padding: 0 10px 0;
+	}
+	align-items: center;
+	display: flex;
+}
+
+.numerator {
+	text-align: center;
+	&__flex {
+		display: flex;
+		text-align: center;
+	}
+}
+.denominator {
+	border-top: 3px solid black;
+	padding-top: 3px;
+	text-align: center;
+}
+
+.Jw {
+	display: flex;
+	align-items: center;
+	padding: 10px 0 0 0;
+	&__formula {
+		position: relative;
+		&_w {
+			position: absolute;
+			font-size: 13px;
+			transform: rotate(90deg);
+		}
+	}
+
+	&__decision {
+		padding: 0 0 0 10px;
+	}
 }

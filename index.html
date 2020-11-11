@@ -1,18 +1,11 @@
-<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
 <!DOCTYPE html>
-<!-- Оболочка документа, указываем язык содержимого -->
 <html lang="ru">
-<!-- Заголовок страницы, контейнер для других важных данных (не отображается) -->
 
 <head>
-	<!-- Заголовок страницы в браузере -->
 	<title>Сайт</title>
-	<!-- Подключаем CSS -->
 	<link rel="stylesheet" href="css/style.css" />
-	<!-- Кодировка страницы -->
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
 </head>
-<!-- Отображаемое тело страницы -->
 
 <body>
 	<div class="container">
@@ -127,7 +120,11 @@
 				</div>
 				<div class="Pnnp__answer"></div>
 			</div>
-
+			<div class="n">
+				<div class="n__formula">n = w × 9.55</div>
+				<div class="n__decision">= <span id="input_w">w</span> × 9.55</div>
+				<div class="n__answer"></div>
+			</div>
 			<div class="EngineData">
 				<div class="engine">Даные Двигателя</div>
 				<div class="engine_selection">
@@ -136,27 +133,27 @@
 							name="U1n" id="U1n" class="Un input">
 					</div>
 					<div class="value">
-						<div class="value__text"><span>Р</span>ном =</div><input tabindex="2" value="19" type="number"
+						<div class="value__text"><span>Р</span>ном =</div><input tabindex="2" value="100" type="number"
 							name="Pn" id="Pn" class="Pn input">
 					</div>
 					<div class="value">
-						<div class="value__text"><span>n</span>ном =</div><input tabindex="3" value="0.5" type="number"
+						<div class="value__text"><span>n</span>ном =</div><input tabindex="3" value="570" type="number"
 							name="nn" id="nn" class="nn input">
 					</div>
 					<div class="value">
-						<div class="value__text"><span>I</span>1н =</div><input tabindex="4" value="20" type="number"
+						<div class="value__text"><span>I</span>1н =</div><input tabindex="4" value="208" type="number"
 							name="I1n" id="I1n" class="I1n input">
 					</div>
 					<div class="value">
-						<div class="value__text"><span>η</span> =</div><input tabindex="5" value="1.8" type="number" name="_n"
-							id="_n" class="_n input">
+						<div class="value__text"><span>η</span> =</div><input tabindex="5" value="90.2" type="number"
+							name="_n" id="_n" class="_n input">
 					</div>
 					<div class="value">
-						<div class="value__text"><span>cosφ</span> =</div><input tabindex="6" value="16.6" type="number"
+						<div class="value__text"><span>cosφ</span> =</div><input tabindex="6" value="0.81" type="number"
 							name="cosf" id="cosf" class="cosf input">
 					</div>
 					<div class="value">
-						<div class="value__text"><span>λ</span> =</div><input tabindex="7" value="1.62" type="number"
+						<div class="value__text"><span>λ</span> =</div><input tabindex="7" value="1.85" type="number"
 							name="Lambda" id="Lambda" class="Lambda input">
 					</div>
 					<div class="value">
@@ -168,7 +165,7 @@
 							<div class="2">
 								<div class="power">2</div>
 							</div>g =
-						</div><input tabindex="9" value="220" type="number" name="GDg" id="GDg" class="GDg input">
+						</div><input tabindex="9" value="440" type="number" name="GDg" id="GDg" class="GDg input">
 					</div>
 				</div>
 				<div class="buttonRun">
@@ -176,10 +173,46 @@
 						<input id="butt1" class="butt" type="button" value="Run" />
 					</div>
 				</div>
+				<div class="Jg">Jg =
+					<div class="Jg__formula">
+						<div class="numerator">
+							<div class="numerator__flex">
+								GD
+								<div class="2">
+									<div class="power">2</div>
+								</div>g</div>
+						</div>
+						<div class="denominator">
+							40
+						</div>
+					</div>=
+					<div class="Jg__decision">
+						<div class="numerator" id="input_GDg">
+							<div class="numerator__flex">
+								GD
+								<div class="2">
+									<div class="power">2</div>
+								</div>g</div>
+						</div>
+						<div class="denominator">
+							40
+						</div>
+					</div>
+					<div class="Jg__answer"></div>
+				</div>
+				<div class="Jw">
+					<div class="Jw__formula">J<span class="Jw__formula_w">w</span></div>
+					<div class="Jw__decision">= 1.4 × Jg</div>
+					<div class="Jw__decision">= 1.4 × <span id="input_Jg">Jg</span></div>
+					<div class="Jw__answer"></div>
+				</div>
+				<div class="engine1">Кароче мне стало дальше лень это оформлять </div>
+				<div class="answer">Ответ: <span class="answer__answer"></span></div>
 			</div>
 		</nav>
 	</div>
 	<script src="js/form.js"></script>
+
 </body>
 
 </html>

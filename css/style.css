@@ -161,6 +161,13 @@ div {
   margin: 0 0 10px 0;
 }
 
+.n {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .Mekv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +262,7 @@ div {
 }
 
 .buttonRun {
+  margin-top: 10px;
   height: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -324,9 +332,76 @@ div {
 }
 
 .engine {
+  margin-top: 10px;
   text-align: center;
+}
+
+.engine1 {
+  margin-top: 10px;
+  text-align: center;
+  color: red;
 }
 
 .power {
   margin: 0 0 10px 0;
+}
+
+.Jg {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.Jg__formula {
+  padding: 0 10px 0;
+  display: inline-block;
+}
+
+.Jg__decision {
+  padding: 0 10px 0;
+}
+
+.numerator {
+  text-align: center;
+}
+
+.numerator__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.denominator {
+  border-top: 3px solid black;
+  padding-top: 3px;
+  text-align: center;
+}
+
+.Jw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 0 0;
+}
+
+.Jw__formula {
+  position: relative;
+}
+
+.Jw__formula_w {
+  position: absolute;
+  font-size: 13px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.Jw__decision {
+  padding: 0 0 0 10px;
 }

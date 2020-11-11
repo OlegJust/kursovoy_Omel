@@ -29,7 +29,9 @@ butt.onclick = function () {
 	tras1(ter, ter1, ter2)
 	funMekv()
 	funPnnp()
-
+	// n
+	document.querySelector('.n__answer').innerHTML = "= " + String((w * 9.55).toFixed(1))
+	//EngineData()
 };
 // ---------------------
 // корень
@@ -73,16 +75,58 @@ function funMekv() {
 //-------------------------
 // Находим Рнпр
 function funPnnp() {
-	//document.querySelector('.Pnnp__answer').insertAdjacentHTML('beforeend', '<div id="two">two</div>')
 	document.querySelector('.Pnnp__answer').innerHTML = "= " + String((+Kz.value * Mekv * +w.value * Math.pow(10, -3)).toFixed(1) + " кВт")
 }
 //-------------------------
-//
+// вставление html кода 
 // function EngineData () {
-// 	document.querySelector('.EngineData').insertAdjacentHTML('beforeend', '<div id="two">two</div>')
+// 	if (document.querySelector('.EngineData').innerHTML === "") {
+// 		document.querySelector('.EngineData').insertAdjacentHTML('beforeend', '<div class="engine">Даные Двигателя</div><div class="engine_selection"><div class="value"><div class="value__text"><span>U</span>1ном =</div><input tabindex="1" value="380" type="number" name="U1n" id="U1n" class="Un input"></div><div class="value"><div class="value__text"><span>Р</span>ном =</div><input tabindex="2" value="19" type="number" name="Pn" id="Pn" class="Pn input"></div><div class="value"><div class="value__text"><span>n</span>ном =</div><input tabindex="3" value="0.5" type="number" name="nn" id="nn" class="nn input"></div><div class="value"><div class="value__text"><span>I</span>1н =</div><input tabindex="4" value="20" type="number" name="I1n" id="I1n" class="I1n input"></div><div class="value"><div class="value__text"><span>η</span> =</div><input tabindex="5" value="1.8" type="number" name="_n" id="_n" class="_n input"></div><div class="value"><div class="value__text"><span>cosφ</span> =</div><input tabindex="6" value="16.6" type="number" name="cosf" id="cosf" class="cosf input"></div><div class="value"><div class="value__text"><span>λ</span> =</div><input tabindex="7" value="1.62" type="number" name="Lambda" id="Lambda" class="Lambda input"></div><div class="value"><div class="value__text"><span>U</span>2н =</div><input tabindex="8" value="62" type="number" name="U2n" id="U2n" class="U2n input"></div><div class="value"><div class="value__text"><span>GD</span><div class="2"><div class="power">2</div></div>g =</div><input tabindex="9" value="220" type="number" name="GDg" id="GDg" class="GDg input"></div></div><div class="buttonRun"><div class="buttonRunBeg"><input id="butt1" class="butt" type="button" value="Run" /></div></div>')
+// 	}
 // }
 
-
 //-------------------------
+// 2 run
 butt1.onclick = function () {
+	let U1n = document.getElementById('U1n').value;
+	let Pn = document.getElementById('Pn').value;
+	let nn = document.getElementById('nn').value;
+	let I1n = document.getElementById('I1n').value;
+	let _n = document.getElementById('_n').value;
+	let cosf = document.getElementById('cosf').value;
+	let Lambda = document.getElementById('Lambda').value;
+	let U2n = document.getElementById('U2n').value;
+	let GDg = document.getElementById('GDg').value;
+	let Jg = 0
+	let Jw = 0
+	value('#input_U1n', U1n)
+	value('#input_Pn', Pn)
+	value('#input_nn', nn)
+	value('#input_I1n', I1n)
+	value('#input__n', _n)
+	value('#input_cosf', cosf)
+	value('#input_Lambda', Lambda)
+	value('#input_U2n', U2n)
+	value('#input_GDg', GDg)
+	jg()
+	jw()
+	answer()
 };
+// Jg
+function jg() {
+	Jg = (+GDg.value / 40).toFixed(1)
+	document.querySelector('.Jg__answer').innerHTML = "= " + String((+GDg.value / 40).toFixed(1))
+	value('#input_Jg', Jg)
+}
+// Jw
+function jw() {
+	Jw = (1.4 * Jg).toFixed(1)
+	document.querySelector('.Jw__answer').innerHTML = "= " + String((1.4 * Jg).toFixed(1))
+}
+// answer
+// function answer() {
+// 	console.log(Jw)
+// 	let Wn = n / 9.55
+// 	let Mn = +Mco.value + +Jw * ()
+// 	console.log(Mn)
+// }
