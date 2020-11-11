@@ -100,7 +100,9 @@ butt1.onclick = function () {
 	let U2n = document.getElementById('U2n').value;
 	let GDg = document.getElementById('GDg').value;
 	let Jg = 0
+	Jg = jg()
 	let Jw = 0
+	Jw = jw()
 	value('#input_U1n', U1n)
 	value('#input_Pn', Pn)
 	value('#input_nn', nn)
@@ -119,16 +121,21 @@ function jg() {
 	Jg = (+GDg.value / 40).toFixed(1)
 	document.querySelector('.Jg__answer').innerHTML = "= " + String((+GDg.value / 40).toFixed(1))
 	value('#input_Jg', Jg)
+	return Jg
 }
 // Jw
 function jw() {
 	Jw = (1.4 * Jg).toFixed(1)
 	document.querySelector('.Jw__answer').innerHTML = "= " + String((1.4 * Jg).toFixed(1))
+	return Jw
 }
-// answer
-// function answer() {
-// 	console.log(Jw)
-// 	let Wn = n / 9.55
-// 	let Mn = +Mco.value + +Jw * ()
-// 	console.log(Mn)
-// }
+answer
+function answer() {
+	let Wn = (+nn.value / 9.55).toFixed(1) // номинальная омега
+	let Mp = Math.round(+Mco.value + Jw * (Wn / +t1.value)) // Мп
+	let Mt = Math.round(+Mco.value - Jw * (Wn / +t3.value))
+	let Mn = Math.round((Math.pow(10, 3) * +Pn.value) / Wn)
+	let Mk = Math.round(+Lambda.value * Mn)
+	let _Mekv = Math.round(Math.sqrt((Math.pow(Mp, 2) * +t1.value + Math.pow(+Mco.value, 2) * (+t5.value + +t7.value - +t1.value - +t3.value) + Math.pow(+Mcm.value, 2) * +t6.value + (-Math.pow(Mt, 2) * +t3.value))/(+t1.value + +t2.value + +t3.value + +t4.value)))
+	console.log(`Jg: ${Jg}; Jw: ${Jw}; Wн: ${Wn}; Mп: ${Mp}; Мт: ${Mt}; Мн: ${Mn}; Мк: ${Mk}; М*экв: ${_Mekv};`)
+}
