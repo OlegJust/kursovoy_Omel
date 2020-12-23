@@ -25,8 +25,8 @@ butt.onclick = function () {
 	value('#input_Mcm', Mcm)
 	value('#input_Kz', Kz)
 	value('#input_Mekv', Mekv)
-	tras1(ter, ter1, ter2) // Для того чтобы после перезаписование значений корень закрывал все облость 
-	tras1(ter, ter1, ter2) // это просто ржака, у меня функц с третего раза срабатывает, что я сделал правильно запустил 3 раза )
+	tras1(ter, ter1, ter2) // Для того чтобы после перезаписование значений корень закрывал всё облость 
+	tras1(ter, ter1, ter2) 
 	tras1(ter, ter1, ter2)
 	
 	funPnnp()
